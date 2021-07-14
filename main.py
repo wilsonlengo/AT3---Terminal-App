@@ -99,7 +99,7 @@ def build():
 
 
 #Dictionary of sidemenu
-sidemenu = 
+
 
 
 
