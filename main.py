@@ -100,7 +100,9 @@ def build():
 
 #Dictionary of sidemenu
 
-
+sidemenu = {
+    
+}
 
 
 #Receipt Generator + Total price
