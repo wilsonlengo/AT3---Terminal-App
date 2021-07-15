@@ -1,5 +1,5 @@
 #Welcome to subway
-
+print("Welcome to Subway!")
 
 
 
@@ -34,6 +34,7 @@ menu = {
         "jalapeno": 1,
         "olives": 1,
         "pickles": 1,
+        "beetroot": 1,
     },
 
     "sauce" : {
@@ -101,7 +102,7 @@ def build():
 #Dictionary of sidemenu
 
 sidemenu = {
-    
+
 }
 
 
