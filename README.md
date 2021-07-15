@@ -11,7 +11,8 @@
 #### 
 * Welcome feature
 * Menu 
-* Sub Builder
+* Side menu
+* Custom Sub Builder
 * Price output/ Receipt Generator
 * Delivery
 
