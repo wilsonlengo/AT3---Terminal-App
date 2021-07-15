@@ -102,8 +102,31 @@ def build():
 #Dictionary of sidemenu
 
 sidemenu = {
-
-}
+    "cookies" : {
+        "chocchip" : 1,
+        "chocchip_rainbow" : 1,
+        "double_chocolate" : 1,
+        "raspberry_cheesecake" : 1,
+        "macadamia_nut" : 1, 
+    },
+    "beverage" : {
+        "coke" : 1,
+        "coke_nosugar" : 1,
+        "sprite" : 1,
+        "icedtea_peach" : 1,
+        "coffee_dare" : 1,
+        "water_bottled" : 1,
+    },
+    "snack" : {
+        "hamcheesetomato_jaffle" : 1,
+        "chipotle" : 1,
+        "meatball_mozza_pot" : 1,     
+    },
+    "toastie" : {
+        "toastie_avocado" : 1,
+        "toastie_cheesygarlic" : 1,
+        "toastie_garlicherb" : 1,
+    }
 
 
 #Receipt Generator + Total price
