@@ -4,11 +4,12 @@
 
 ### **_Statement of Purpose_**
 
-#### The purpose of this terminal application is for the user to build their custom "sub" from Subway via user input and ingredients can be referenced via a dictionary.
+#### The purpose of this terminal application is for the user to build their custom "sub" from Subway via user input and ingredients can be referenced via a dictionary. Essentially, this is replicating a typically Subway store visit in real time, except this interaction is simulated with my terminal application.
 
 ### **_Application features_**
 
 #### 
+* Welcome feature
 * Menu 
 * Sub Builder
 * Price output/ Receipt Generator
