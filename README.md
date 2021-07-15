@@ -24,4 +24,28 @@ The intended user experience is that firstly, the application will welcome the u
 
 
 
+# **Implementation Plan**
+### **_Welcome Feature (lowest priority)_**
+The "Welcome to Subway" message will be printed out in (hopefully) block letters with an imported module.
+**Deadline:** Saturday
+
+### **_Menu + Side Menu + Sub Creation (top priority)_**
+I intend on creating the menu and side menu with dictionaries. Each step of the creation process will display the ingredients available to be chosen by the user and these available ingredients will be stored inside a dictionary inside the main dictionary. Throughout each step of the creation process, I will include the input function, so that the user will be able to type in what they want in their "sub". The side menu will have its own dictionary wheres the users can refer to later on after creating their "sub" and this will also require the user input function.
+**Deadline:** Thursday
+
+### **_Price Output (second priority)_** 
+The price output will be calculted with a function(def), which takes all variables such as user input and adds up all chosen ingredients and extra additions on the side
+**Deadline:** Friday
+
+### **_Receipt Generator (third priority)_**
+The receipt generator will take the price output and print it on the user's screen
+**Deadline:** Friday
+
+### **_Delivery (fourth priority)_**
+This delivery function will take user input and save the user input inside a database. If the user input already exists, the user won't need to re-enter their details.
+**Deadline:** Friday
+
+
+
+
  
