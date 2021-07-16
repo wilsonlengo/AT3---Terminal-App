@@ -251,14 +251,16 @@ else:
     print("Invalid!")
 
 y=0
-print ("Here is your order")
+print ("Here is your order:")
 print ("     ")
-print ("********")
+print ("***********")
 while y <counter:
    
     print ("Item: "+ (orderItems[y]))
-    print ("Cost: "+str(orderTotal[y]))
+    print ("Cost: $"+str(orderTotal[y]))
     y=y+1
+print ("***********")
+print ("     ")
 #print(orderItems)
 #print(orderTotal)
 #print(counter)
