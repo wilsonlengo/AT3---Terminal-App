@@ -1,134 +1,102 @@
 #Welcome to subway
 print("Welcome to Subway!")
+print("Baked fresh daily and available in 6-inch and Footlong sizes")
 
+submenu = ["Ultimate Chicken", "Ultimate Meatball", "BLT", "Buffalo Chicken", "Chicken Bacon", "Chicken Classic", "Chicken Strips", "Chicken Teriyaki", "Chicken Schnitzel", "Leg Ham", "Meatball Melt", "Pizza Melt", "Roast Beef", "Falafel", "Steak Melt", "Tuna Mayo", "Turkey", "Veggie", "Veggie Patty"]
+submenu_price = [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
 
+orderItems = []
+orderTotal = []
 
-
-#Dictonary of ingredients
-# Loop through menu, and into breads and
-menu = {
-    "breads" : {
-        "whitebread" : 2,
-        "wheatbread" : 2,
-        "italianherb": 2,
-        "maltedrye": 2,
-        "plainwrap": 2,
-        "glutenfreewrap": 2,
-        "multigrainwrap": 2,
-    },
-  
-    "cheese" : {
-        "cheddar": 1,
-        "mozzarella": 1,
-        "oldenglish": 1,
-    },
-
-    "vegetables" : {
-        "avocado": 1,
-        "capsicum": 1,
-        "carrots": 1,
-        "cucumbers": 1,
-        "lettuce": 1,
-        "onions": 1,
-        "spinach": 1,
-        "jalapeno": 1,
-        "olives": 1,
-        "pickles": 1,
-        "beetroot": 1,
-    },
-
-    "sauce" : {
-        "habanero_hot_sauce": 1,
-        "blue_cheese_dressing": 1,
-        "smoky_bbq": 1,
-        "chipotle_southwest": 1,
-        "mayonnaise": 1,
-        "garlic_aioli": 1,
-        "sweet_onion": 1,
-        "honey_mustard": 1,
-        "ranch_dressing": 1,
-        "tomato_sauce": 1,
-        "spicy_mayo": 1,
-    },
-}
-
-toasted = None
-cart = [] # {Avocado: 3}
-
-def build():
-    print("Baked fresh daily and available in 6-inch and Footlong sizes")
-
-    bread_choice = None
-    bread_price = None
+sidemenu = ["HamCheeseTomato Jaffle", "Meatball Pot", "Chipotle", "Avocado Toastie", "CheesyGarlic Toastie", "GarlicHerb Toastie", "Ultimate Toastie", "Chocolate Cookie", "Rainbow Cookie", "DoubleChocolate Cookie", "Raspberry Cookie", "Macadamnia Cookie", "Coke", "Sprite", "Coke NoSugar", "IcedTea", "Water Bottled", "Water Sparkling"]
+sidemenu_price = [5, 5, 5, 4, 4, 4, 4, 2, 2, 2, 2, 4, 4, 4, 4, 3, 3]
+order = input("Are you looking to purchase a sandwich today or just side menu items? Please enter 'yes' for the Sub Menu or 'no' for the Side Menu:\n")
+if order == "yes":
+    print(submenu)
+    subOrder = input("What are you after? Select 1 (e.g Ultimate Chicken)\n")
+    if subOrder == "Ultimate Chicken":
+        orderItems.append(submenu[0])
+        orderTotal.append(submenu_price[0])
     
-    # for key, value in menu["breads"].items():
-    #     print(f"{key.capitalize()}: ${value}")
-
-    # bread_choice = input("Choose your bread from the list above:\n")
-    # bread_price = menu["breads"][bread_choice]
-    # print("BREAD CHOICE: ", bread_choice)
-    # print("BREAD PRICE: ", bread_price)
-
-    # for key, value in menu["cheese"].items():
-    #     print(f"{key.capitalize()}: ${value}")
+    elif subOrder == "Ultimate Meatball":
+         orderItems.append(submenu[1])
+         orderTotal.append(submenu_price[1])
+    
+    elif subOrder == "BLT":
+         orderItems.append(submenu[2])
+         orderTotal.append(submenu_price[2])
         
-    # cheese_choice = input("Choose your type of cheese:\n")
-    # cheese_price = menu["cheese"][cheese_choice]
-    # print("CHEESE CHOICE ", cheese_choice)
-    # print("CHEESE PRICE: ", cheese_price)
-
-    # for key, value in menu["vegetables"].items():
-    #     print(f"{key.capitalize()}: ${value}")
+    elif subOrder == "Buffalo Chicken":
+         orderItems.append(submenu[3])
+         orderTotal.append(submenu_price[3])
     
-    vegetable_choice = input("List all the vegetables you want (e.g. lettuce, tomato, beetroot):\n")
-    vegetable_price = 0
+    elif subOrder == "Chicken Bacon":
+         orderItems.append(submenu[4])
+         orderTotal.append(submenu_price[4])
 
-    # 'lettuce, tomato, beetroot'
-    print(vegetable_choice)
-    vegetable_choices = vegetable_choice.split(',')
-    print(vegetable_choice)
+    elif subOrder == "Chicken Classic":
+         orderItems.append(submenu[5])
+         orderTotal.append(submenu_price[5])
 
-    for vegetable in vegetable_choices:
-        # vegetable_price += 
-        print(menu["vegetables"][vegetable])
+    elif subOrder == "Chicken Strips":
+         orderItems.append(submenu[6])
+         orderTotal.append(submenu_price[6])
 
-    print(vegetable_price)
- 
+    elif subOrder == "Chicken Teriyaki":
+         orderItems.append(submenu[7])
+         orderTotal.append(submenu_price[7])
+
+    elif subOrder == "Chicken Schnitzel":
+         orderItems.append(submenu[8])
+         orderTotal.append(submenu_price[8])
+
+    elif subOrder == "Leg Ham":
+         orderItems.append(submenu[9])
+         orderTotal.append(submenu_price[9])
+
+    elif subOrder == "Meatball Melt":
+         orderItems.append(submenu[10])
+         orderTotal.append(submenu_price[10])
+
+    elif subOrder == "Pizza Melt":
+         orderItems.append(submenu[11])
+         orderTotal.append(submenu_price[11])
+
+    elif subOrder == "Roast Beef":
+         orderItems.append(submenu[12])
+         orderTotal.append(submenu_price[12])
+
+    elif subOrder == "Falafel":
+         orderItems.append(submenu[13])
+         orderTotal.append(submenu_price[13])
+
+    elif subOrder == "Steak Melt":
+         orderItems.append(submenu[14])
+         orderTotal.append(submenu_price[14])
+
+    elif subOrder == "Tuna Mayo":
+         orderItems.append(submenu[15])
+         orderTotal.append(submenu_price[15])
+
+    elif subOrder == "Turkey":
+         orderItems.append(submenu[16])
+         orderTotal.append(submenu_price[16])
+
+    elif subOrder == "Veggie Only":
+         orderItems.append(submenu[17])
+         orderTotal.append(submenu_price[17])
     
+    elif subOrder == "Veggie Patty":
+         orderItems.append(submenu[18])
+         orderTotal.append(submenu_price[18])
+    else: 
+        print("Not on menu!")
+elif order == "no":
+    print(sidemenu)
+    sidemenuOrder = input("What are you looking for in the side menu? (e.g CheesyGarlic Toastie)\n")
+else:
+    print("Invalid!")
 
-    
-
-
-#Dictionary of sidemenu
-
-sidemenu = {
-    "cookies" : {
-        "chocchip" : 1,
-        "chocchip_rainbow" : 1,
-        "double_chocolate" : 1,
-        "raspberry_cheesecake" : 1,
-        "macadamia_nut" : 1, 
-    },
-    "beverage" : {
-        "coke" : 1,
-        "coke_nosugar" : 1,
-        "sprite" : 1,
-        "icedtea_peach" : 1,
-        "coffee_dare" : 1,
-        "water_bottled" : 1,
-    },
-    "snack" : {
-        "hamcheesetomato_jaffle" : 1,
-        "chipotle" : 1,
-        "meatball_mozza_pot" : 1,     
-    },
-    "toastie" : {
-        "toastie_avocado" : 1,
-        "toastie_cheesygarlic" : 1,
-        "toastie_garlicherb" : 1,
-    }
-
-
-#Receipt Generator + Total price
-
-#Delivery
+print(orderItems)
+print(orderTotal)
+#print(submenu)
