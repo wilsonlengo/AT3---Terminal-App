@@ -12,14 +12,14 @@ except NameError:
     print("")
 print("Baked fresh daily and available in 6-inch and Footlong sizes")
 print("")
-
+#Main menu AKA the sub menu
 submenu = ["Ultimate Chicken", "Ultimate Meatball", "BLT", "Buffalo Chicken", "Chicken Bacon", "Chicken Classic", "Chicken Strips", "Chicken Teriyaki", "Chicken Schnitzel", "Leg Ham", "Meatball Melt", "Pizza Melt", "Roast Beef", "Falafel", "Steak Melt", "Tuna Mayo", "Turkey", "Veggie Only", "Veggie Patty"]
 submenu_price = [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
-
+#Empty cart
 orderItems = []
 orderTotal = []
 counter = 0
-
+#Side menu inside a list
 sidemenu = ["HamCheeseTomato Jaffle", "Meatball Pot", "Chipotle", "Avocado Toastie", "CheesyGarlic Toastie", "GarlicHerb Toastie", "Ultimate Toastie", "Chocolate Cookie", "Rainbow Cookie", "DoubleChocolate Cookie", "Raspberry Cookie", "Macadamnia Cookie", "Coke", "Sprite", "Coke NoSugar", "IcedTea", "Water Bottled", "Water Sparkling"]
 sidemenu_price = [5, 5, 5, 4, 4, 4, 4, 2, 2, 2, 2, 4, 4, 4, 4, 3, 3]
 
@@ -133,7 +133,7 @@ if menu == "yes":
     else: 
         print("Not on menu!")
     
-
+#Looping through side menu
     finished = input("Have you finished ordering? Y/N: ")
     if finished =="N":
         nextOrder= True
@@ -268,14 +268,17 @@ else:
 y=0
 print ("Here is your order:")
 print ("     ")
-print ("***********")
+print ("************************")
 while y <counter:
    
     print ("Item: "+ (orderItems[y]))
     print ("Cost: $"+str(orderTotal[y]))
     y=y+1
-print ("***********")
+total = sum(orderTotal)
+print(f"Your total comes to: ${total}")
+print ("*************************")
 print ("     ")
+
 
 # Feature: Delivery
 delivery = input("Would you like your order delivered? Y/N ")
@@ -283,8 +286,8 @@ if delivery == "Y":
     detailName = input("Please enter your full name: ")
     detailAddress = input("Please enter your street address: ")
     detailSuburb = input("Plesse enter your suburb and postcode: ")
-    cowsay.cow(f"Thank you for order, {detailName}. It has been successfully placed for {detailAddress} in {detailSuburb}! Have a great day!")
+    cowsay.cow(f"DELIVERY CONFIRMED: Thank you for order, {detailName}. It has been successfully placed for {detailAddress} in {detailSuburb}! Have a great day!")
 
 
 else:
-    cowsay.cow("Have a lovely day!!!")
+    cowsay.cow("Thank you for purchasing from Subway, have a lovely day!!!")
