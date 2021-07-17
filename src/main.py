@@ -1,6 +1,17 @@
-#Welcome to subway
-print("Welcome to Subway!")
+# Feature: Welcome to subway
+try:
+    import cowsay
+
+except ModuleNotFoundError:
+    print("Welcome to Subway!")
+
+try:
+    cowsay.turtle("Welcome to Subway!")
+
+except NameError:
+    print("")
 print("Baked fresh daily and available in 6-inch and Footlong sizes")
+print("")
 
 submenu = ["Ultimate Chicken", "Ultimate Meatball", "BLT", "Buffalo Chicken", "Chicken Bacon", "Chicken Classic", "Chicken Strips", "Chicken Teriyaki", "Chicken Schnitzel", "Leg Ham", "Meatball Melt", "Pizza Melt", "Roast Beef", "Falafel", "Steak Melt", "Tuna Mayo", "Turkey", "Veggie Only", "Veggie Patty"]
 submenu_price = [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
@@ -221,7 +232,8 @@ if menu == "yes":
             
             elif sidemenuInput == "Iced Tea":
                 orderItems.append(sidemenu[15])
-                orderTotal.append(sidemenu_price[15]
+                orderTotal.append(sidemenu_price[15])
+                counter=counter+1
                     
 
             elif sidemenuInput == "Water Bottled":
@@ -252,7 +264,7 @@ if menu == "yes":
     
 else:
     print("Invalid!")
-#Receipt Generator
+# Feature: Receipt Generator
 y=0
 print ("Here is your order:")
 print ("     ")
@@ -265,10 +277,14 @@ while y <counter:
 print ("***********")
 print ("     ")
 
-
+# Feature: Delivery
 delivery = input("Would you like your order delivered? Y/N ")
 if delivery == "Y":
     detailName = input("Please enter your full name: ")
     detailAddress = input("Please enter your street address: ")
     detailSuburb = input("Plesse enter your suburb and postcode: ")
-    print(f"Thank you for order, {detailName}. It has been successfully placed for {detailAddress} in {detailSuburb}! Have a great day!")
+    cowsay.cow(f"Thank you for order, {detailName}. It has been successfully placed for {detailAddress} in {detailSuburb}! Have a great day!")
+
+
+else:
+    cowsay.cow("Have a lovely day!!!")

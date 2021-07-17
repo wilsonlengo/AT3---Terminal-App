@@ -26,7 +26,7 @@ The intended user experience is that firstly, the application will welcome the u
 
 # **Implementation Plan**
 ### **_Welcome Feature (lowest priority)_**
-The "Welcome to Subway" message will be printed out in (hopefully) block letters with an imported module.
+The "Welcome to Subway" message will be printed out in (hopefully) with cowsay. I plan on welcoming the customer with a turtle!
 <br>
 **Deadline:** Saturday
 
@@ -50,12 +50,38 @@ The receipt generator will take the price output and print it on the user's scre
 **Status** Complete
 
 ### **_Delivery (fourth priority)_**
-This delivery function will take user input, it would be including a name, address, and suburb(postcode). With the user input, it will print out after the receipt is already generated and then print on the user's screen their name, address, and suburb they entered as a confirmation.
+This delivery function will take user input, it would be including a name, address, and suburb(postcode). With the user input, it will print out after the receipt is already generated and then print on the user's screen their name, address, and suburb they entered as a confirmation. Through cowsay, hopefully the output of this message will be printed with a cow.
 <br>
 **Deadline:** Friday
 
 
+# **Feature Tests**
 
+
+
+
+
+
+
+
+
+
+# **Trello Board - Timeline**
+Monday:
+![screenshot1trello](img/trello2.png)
+
+After Thursday (afternoon):
+![screenshot2trello](img/trello3.png)
+
+After Friday (noon):
+![screenshot3trello](img/trello1.png)
+
+Final:
+![]()
+
+
+Control Flow Diagram:
+![controlflowdiagramforapplication](img/cfd.png)
 
 
 
