@@ -50,7 +50,7 @@ The receipt generator will take the price output and print it on the user's scre
 **Status** Complete
 
 ### **_Delivery (fourth priority)_**
-This delivery function will take user input and save the user input inside a database. If the user input already exists, the user won't need to re-enter their details.
+This delivery function will take user input, it would be including a name, address, and suburb(postcode). With the user input, it will print out after the receipt is already generated and then print on the user's screen their name, address, and suburb they entered as a confirmation.
 <br>
 **Deadline:** Friday
 

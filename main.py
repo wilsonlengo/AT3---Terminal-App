@@ -218,17 +218,21 @@ if menu == "yes":
                 orderItems.append(sidemenu[14])
                 orderTotal.append(sidemenu_price[14])
                 counter=counter+1
+            
+            elif sidemenuInput == "Iced Tea":
+                orderItems.append(sidemenu[15])
+                orderTotal.append(sidemenu_price[15]
                     
 
             elif sidemenuInput == "Water Bottled":
-                orderItems.append(sidemenu[15])
-                orderTotal.append(sidemenu_price[15])
+                orderItems.append(sidemenu[16])
+                orderTotal.append(sidemenu_price[16])
                 counter=counter+1
                     
 
             elif sidemenuInput == "Water Sparkling":
-                orderItems.append(sidemenu[16])
-                orderTotal.append(sidemenu_price[16])
+                orderItems.append(sidemenu[17])
+                orderTotal.append(sidemenu_price[17])
                 counter=counter+1
             
             else:
@@ -248,7 +252,7 @@ if menu == "yes":
     
 else:
     print("Invalid!")
-
+#Receipt Generator
 y=0
 print ("Here is your order:")
 print ("     ")
@@ -260,6 +264,11 @@ while y <counter:
     y=y+1
 print ("***********")
 print ("     ")
-#print(orderItems)
-#print(orderTotal)
-#print(counter)
+
+
+delivery = input("Would you like your order delivered? Y/N ")
+if delivery == "Y":
+    detailName = input("Please enter your full name: ")
+    detailAddress = input("Please enter your street address: ")
+    detailSuburb = input("Plesse enter your suburb and postcode: ")
+    print(f"Thank you for order, {detailName}. It has been successfully placed for {detailAddress} in {detailSuburb}! Have a great day!")
