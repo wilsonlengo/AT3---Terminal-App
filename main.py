@@ -2,7 +2,7 @@
 print("Welcome to Subway!")
 print("Baked fresh daily and available in 6-inch and Footlong sizes")
 
-submenu = ["Ultimate Chicken", "Ultimate Meatball", "BLT", "Buffalo Chicken", "Chicken Bacon", "Chicken Classic", "Chicken Strips", "Chicken Teriyaki", "Chicken Schnitzel", "Leg Ham", "Meatball Melt", "Pizza Melt", "Roast Beef", "Falafel", "Steak Melt", "Tuna Mayo", "Turkey", "Veggie", "Veggie Patty"]
+submenu = ["Ultimate Chicken", "Ultimate Meatball", "BLT", "Buffalo Chicken", "Chicken Bacon", "Chicken Classic", "Chicken Strips", "Chicken Teriyaki", "Chicken Schnitzel", "Leg Ham", "Meatball Melt", "Pizza Melt", "Roast Beef", "Falafel", "Steak Melt", "Tuna Mayo", "Turkey", "Veggie Only", "Veggie Patty"]
 submenu_price = [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10]
 
 orderItems = []
@@ -21,8 +21,8 @@ else:
 
 
 
-
-menu = input("Are you looking to purchase a sandwich today or just side menu items? Please enter 'yes' for the Sub Menu or 'no' for the Side Menu:\n")
+#Main menu selection followed by side menu selection (optional)
+menu = input("Please enter 'yes' to continue to choosing your main meal:\n")
 if menu == "yes":
     print(submenu)
     subOrder = input("What are you after? Select 1 (e.g Ultimate Chicken)\n")
@@ -244,9 +244,8 @@ if menu == "yes":
             nextOrder = False
    
 
-elif menu == "no":
-    print(sidemenu)
-    sidemenuOrder = input("What are you looking for in the side menu? (e.g CheesyGarlic Toastie)\n")
+
+    
 else:
     print("Invalid!")
 

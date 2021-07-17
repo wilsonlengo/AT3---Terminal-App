@@ -20,7 +20,7 @@ The purpose of this terminal application is act as typical Subway simulation vis
 
 ### **_Outline_**
 #### 
-The intended user experience is that firstly, the application will welcome the user and then a menu will pop up displaying the available sandwiches to purchase. Following that, the user will be prompted to what sandwich they want and then the application will ask if the user would want any additions from the side menu such as a drink or cookies. Next, the total price is calculated and a receipt is printed on the screen. After that, the user would be prompted to if they want their order delivered or not. If they want their order delivered, they would they would be prompted to type in their information and this information will be saved and stored in a database.
+The intended user experience is that firstly, the application will welcome the user  and then ask if they would like to order. After that, a menu will pop up displaying the available sandwiches to purchase. Following that, the user will be prompted to what sandwich they want and then the application will ask if the user would want any additions from the side menu such as a drink or cookies. The program will keep on asking the user if they want additions on the side menu until they say "N", which means "no" to wanting to order anymore. Next, the total price is calculated and a receipt is printed on the screen. After that, the user would be prompted to if they want their order delivered or not. If they want their order delivered, they would they would be prompted to type in their information and this information will be saved and stored in a database.
 
 
 
@@ -31,25 +31,30 @@ The "Welcome to Subway" message will be printed out in (hopefully) block letters
 **Deadline:** Saturday
 
 ### **_Menu + Side Menu + Sub Creation (top priority)_**
-I intend on creating the menu and side menu with lists. Throughout the choosing process, the user will be prompted via user input to what they would like to add to their cart. Chosen items will be added together and a receipt will be printed out.
+I intend on creating the menu and side menu with lists. Following the menu and side menu, I will be creating a price menu just under it which can be referred back to later on throughout the selection process. Throughout the choosing process, the user will be prompted via user input to what they would like to add to their cart. Chosen items will be added together and a receipt will be printed out. Choosing one item from the main menu is mandatory, but choosing items off the side menu is completely optionally, therefore, the user is only required to select one item from the main menu and choosing items from the side menu is completely optional. 
 <br>
 **Deadline:** Thursday
 **Update** : I removed the custom sub creation as it was too difficult for me to create, therefore I'm only including the menu and side menu being available to order.
+**Status** : Complete
 
 ### **_Price Output (second priority)_** 
 The price output will be calculted with a function(def), which takes all variables such as user input and adds up all chosen ingredients and extra additions on the side
 <br>
 **Deadline:** Friday
+**Status** : Complete
 
 ### **_Receipt Generator (third priority)_**
 The receipt generator will take the price output and print it on the user's screen
 <br>
 **Deadline:** Friday
+**Status** Complete
 
 ### **_Delivery (fourth priority)_**
 This delivery function will take user input and save the user input inside a database. If the user input already exists, the user won't need to re-enter their details.
 <br>
 **Deadline:** Friday
+
+
 
 
 
